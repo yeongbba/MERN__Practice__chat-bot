@@ -106,9 +106,9 @@ function Chatbot() {
   };
 
   const renderCards = (cards) => {
-    return cards.map((card, index) => (
-      <Card key={index} cardInfo={card.structValue} />
-    ));
+    return cards.map((card, index) => {
+      return <Card key={index} cardInfo={card.structValue} />;
+    });
   };
 
   const renderOneMessage = (message, i) => {
